@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'apps.noticia',
+    'import_export',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -114,3 +117,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIR = os.path.join(os.path.dirname(BASE_DIR),'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT =  os.path.join(os.path.dirname(BASE_DIR),'media')
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}
