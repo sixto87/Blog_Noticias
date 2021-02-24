@@ -24,7 +24,7 @@ SECRET_KEY = '5n_1_8-=)wcc582pwjh_#1$w#b)$%c6r3&42whuoc)m_$5_!iw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-
+AUTH_USER_MODEL ='usuarios.Usuario'
 
 # Application definition
 
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'apps.noticia',
     'import_export',
     'ckeditor',
+    'apps.usuarios'
 ]
 
 MIDDLEWARE = [
